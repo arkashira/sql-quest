@@ -1,8 +1,17 @@
-# Query Dashboard
-A simple query dashboard with search functionality.
+# Query Adapters
+
+Query adapters for data warehouses.
 
 ## Usage
-1. Create a `QueryDashboard` instance.
-2. Add queries using the `add_query` method.
-3. Search for queries using the `search` method.
-4. Get query metadata using the `get_query_metadata` method.
+
+1. Create a `QueryVault` instance.
+2. Add an adapter for a data warehouse using `add_adapter`.
+3. Integrate with the data warehouse using `integrate`.
+4. Use a query template with the data warehouse using `use_query_template`.
+
+## Supported Data Warehouses
+
+* Snowflake
+* BigQuery
+* Redshift
+* Postgres
